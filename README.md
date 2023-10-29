@@ -15,6 +15,10 @@ This is a simple client-side app that functions as a primitive Content Managemen
 - React Router;
 - Webpack;
 
+## DEMO LINK
+
+https://roksolanatylipska.github.io/content-management-system/#/tabs/dummyTable.js
+
 ## Getting Started
 
 You can open the project using the index.html file in the 'public' folder.
