@@ -1,24 +1,20 @@
-import { Navigate, createBrowserRouter } from 'react-router-dom';
-// import DummyTable from './components/Tabs/dummyTable';
-// import DummyChart from './components/Tabs/dummyChart';
-// import DummyList from './components/Tabs/dummyList';
-import ErrorPage from './components/ErrorPage/ErrorPage';
-import TabsList from './components/TabsList/TabsList';
+import { Navigate, createHashRouter } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import TabsList from './components/TabsList/TabsList.jsx';
 import React from 'react';
 
-const DummyTable = React.lazy(() => import('./components/Tabs/dummyTable'));
-const DummyChart = React.lazy(() => import('./components/Tabs/dummyChart'));
-const DummyList = React.lazy(() => import('./components/Tabs/dummyList'));
+const DummyTable = React.lazy(() => import('./components/Tabs/dummyTable.js'));
+const DummyChart = React.lazy(() => import('./components/Tabs/dummyChart.js'));
+const DummyList = React.lazy(() => import('./components/Tabs/dummyList.js'));
 
-const AppRouter = createBrowserRouter([
+const AppRouter = createHashRouter([
   {
     path: '/',
     element: <TabsList />,
     errorElement: <ErrorPage />,
     children: [
-
       {
-        path: "/",
+        path: '/',
         element: <Navigate to='tabs/dummyTable.js' replace />
       },
 
@@ -38,7 +34,7 @@ const AppRouter = createBrowserRouter([
       },
   
     ],
-  }
+  },
 ])
 
 export default AppRouter;

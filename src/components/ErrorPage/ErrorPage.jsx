@@ -12,13 +12,13 @@ function ErrorPage() {
 
       <p className='error-page-text'>This page doesn't exist...</p>
 
-      <img 
-        src='https://www.bbitrix.ru/upload/medialibrary/1d4/1d4bc838a0107b1b52418ce53e6715e8.png' 
-        alt='Oops! John Travolta' 
+      <img
+        src='https://www.bbitrix.ru/upload/medialibrary/1d4/1d4bc838a0107b1b52418ce53e6715e8.png'
+        alt='Oops! John Travolta'
         className='error-page-img'
-      />  
+      />
 
-      <NavLink 
+      <NavLink
         className={'error-page-button'}
         to={'/'}
       >
