@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcontent_management_system=self.webpackChunkcontent_management_system||[]).push([[377],{377:function(e,t,n){n.r(t);var l=n(294);t.default=function(){return l.createElement("table",null,l.createElement("tr",null,l.createElement("td",null,"Dummy"),l.createElement("td",null,"Chart")))}}}]);
